@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 引入vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- 引入element ui样式 -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"
+    />
+    <!-- 引入element ui组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <!-- 自己的样式 -->
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <!-- less -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+    <title>示例</title>
+  </head>
+  <body>
+    <div id="container">
+      <!-- 顶部固定栏 -->
+      <div class="top">
+        <!-- 头像 -->
+        <div class="left">
+          <el-avatar
+            src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png"
+          ></el-avatar>
+          <div class="name" style="margin-left: 10px">
+            <span>黄房子</span>
+            <br />
+            <span>Yellow-House</span>
+          </div>
+        </div>
+        <!-- 菜单 -->
+        <div class="right">
+          <div class="icon">
+            <div class="weibo"></div>
+            <div class="bilibili"></div>
+            <div class="cat"></div>
+            <div class="qq"></div>
+          </div>
+          <div class="seleection">
+            <div class="btn" style="width: 55%"><span>主页</span></div>
+            <div class="btn"><span>档期与动态</span></div>
+            <div class="btn"><span>例图与价格</span></div>
+            <div class="btn" style="width: 85%"><span>注意事项</span></div>
+            <div class="btn" style="width: 50%"><span>Q&A</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 黄色球背景  -->
+      <div
+        class="cirle"
+        style="
+          height: 799px;
+          width: 799px;
+          position: absolute;
+          left: 720px;
+          top: -304px;
+        "
+      ></div>
+      <div
+        class="cirle"
+        style="
+          height: 557px;
+          width: 557px;
+          position: absolute;
+          left: -189px;
+          top: 761px;
+        "
+      ></div>
+      <div
+        class="cirle"
+        style="
+          height: 425px;
+          width: 425px;
+          position: absolute;
+          left: 890px;
+          top: 1659px;
+        "
+      ></div>
+      <div
+        class="cirle"
+        style="
+          height: 526px;
+          width: 526px;
+          position: absolute;
+          left: -189px;
+          top: 4359px;
+        "
+      ></div>
+      <div
+        class="cirle"
+        style="
+          height: 222px;
+          width: 223px;
+          position: absolute;
+          left: 608px;
+          top: 5443px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          white-space: nowrap;
+        "
+      >
+        <span style="font-size: 70px">向我约稿</span>
+      </div>
+      <!-- 标题 -->
+      <div
+        class="introduceSelf"
+        style="
+          position: absolute;
+          top: 397px;
+          left: 212px;
+          padding-right: 10px;
+          font-size: 70px;
+        "
+      >
+        <span style="margin-right: 10px">我是</span
+        ><span style="color: #ffd300">黄房子</span><span>。</span>
+      </div>
+      <!-- 介绍 -->
+      <div
+        class="introduce"
+        style="
+          position: absolute;
+          width: 604px;
+          height: 200px;
+          left: 213px;
+          top: 500px;
+          font-size: 18px;
+          line-height: 21px;
+          color: #000000;
+        "
+      >
+        <span>
+          为了方便大家查看例图、价格和档期，设立了这个网站。<br />
+          如果您想要约稿，请确认下方的档期能否接受，并阅读注意事项和 Q&A。<br />
+          也欢迎大家关注我的微博、半次元和哔哩哔哩绘画直播。
+        </span>
+      </div>
+      <!-- 档期与动态 -->
+      <!-- 例图与价格 -->
+      <!-- 注意事项 -->
+      <div class="attention">
+        <div class="tipTittle"><span>注意事项</span></div>
+        <div class="tips">
+          <span>
+            1.所有稿件在没开始画之前不收定金，也可以随时退稿；<br />
+            2.除摸鱼外所有稿件默认在成图之前只确认一次“铺色草图”，且可以直播绘制。如果不能接受请在邮件中说明；<br />
+            3.请明确私人约稿仅授权甲方个人非盈利用途；<br />
+            4.我不擅长的人设：成年男性、御姐、古风……；<br />
+            5.例图与价格页面的价格仅为底价，请根据人设复杂程度和需求等因素浮动价格；<br />
+            6.为了方便例图与价格只写了经常接稿的类型，没有出现的类型也可以带上必要信息向我约稿；<br />
+            7.如果还有其他疑问可以加群询问（QQ群号：542834127），比较人多问的问题，会补充进QA页面；<br />
+            8.请在约稿时填写好我需要的信息，所有符合规范的邮件，不论是否接稿我都会在两个工作日内进行回复。<br />
+          </span>
+        </div>
+        <div class="request">
+          <span>
+            请确认您已悉知上方的约稿注意事项，<br />
+            编辑您要约稿的内容发送到我本人邮箱 。<br />
+            约稿内容必须包含：
+          </span>
+        </div>
+        <div class="List">
+          <ul v-for="item in List" key="item.id">
+            <li><span>{{item.id}}.</span><span style="float: right;">{{item.content}}</span></li>
+            <span class="line"></span>
+          </ul>
+        </div>
+        <div class="request" style="top: 6120px; left: 542px">
+          <span>
+            所有符合规范的邮件，不论是否接稿我都<br />
+            会在两个工作日内进行回复。<br />
+          </span>
+          <span style="padding-top: 20px;">接受约稿的邮箱地址:</span>
+        </div>
+        <div class="btn">
+          <span>717211588@qq.com</span>
+        </div>
+      </div>
+      <!-- 约稿须知 -->
+      <!-- 版权 -->
+    </div>
+    <script>
+      let vm = new Vue({
+        el: "#container",
+        data: {
+          List: [
+            { id: 1, content: "请确认您已成年" },
+            { id: 2, content: "明确的自带价" },
+            { id: 3, content: "要约稿的类型和内容" },
+            { id: 4, content: "人设约稿的共养人数" },
+            { id: 5, content: "可以接受的最迟交稿日期" },
+            { id: 6, content: "对水印的要求" },
+            { id: 7, content: "联系方式" },
+          ],
+        },
+        methods: {},
+      });
+    </script>
+  </body>
+</html>

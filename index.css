@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "future";
+  src: url("assets/font/未来圆/未来圆.woff") format("woff");
+}
+#container {
+  background-color: #e5e5e5;
+  height: 10000px;
+  width: 100%;
+  font-family: future;
+  overflow: hidden;
+  position: relative;
+}
+li {
+  list-style: none;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.top .left {
+  display: flex;
+  position: fixed;
+  top: 33px;
+  left: 36px;
+}
+.top .right {
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+}
+.top .right .seleection {
+  position: fixed;
+  top: 40%;
+  left: 1180px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-self: flex-start;
+}
+.top .right .seleection .btn {
+  color: #000000;
+  border: none;
+  margin: 10px 0;
+  border-radius: 15px;
+  font: inherit;
+  transition: 0.8s;
+}
+.top .right .seleection .btn span {
+  margin: 5px 10px;
+}
+.top .right .seleection .btn:hover {
+  color: #fde260;
+  border: none;
+  background-color: #333;
+  transition: 0.6s;
+}
+.top .right .icon {
+  display: flex;
+  position: fixed;
+  top: 24px;
+  left: 1180px;
+}
+.top .right .icon .weibo {
+  width: 39px;
+  height: 39px;
+  background: url("assets/image_2022-01-07_19-01-02.png") 0px 0px;
+}
+.top .right .icon .bilibili {
+  width: 39px;
+  height: 39px;
+  background: url("assets/image_2022-01-07_19-01-02.png") -41px -39px;
+}
+.top .right .icon .cat {
+  width: 39px;
+  height: 39px;
+  background: url("assets/image_2022-01-07_19-01-02.png") -82px -39px;
+}
+.top .right .icon .qq {
+  width: 39px;
+  height: 39px;
+  background: url("assets/image_2022-01-07_19-01-02.png") -164px -39px;
+}
+.attention {
+  position: relative;
+}
+.attention .tipTittle {
+  position: absolute;
+  top: 4567px;
+  left: 143px;
+  z-index: 999;
+  font-size: 68px;
+}
+.attention .tips {
+  position: absolute;
+  top: 4877px;
+  left: 337px;
+  z-index: 999;
+  font-size: 20px;
+  line-height: 2;
+}
+.attention .request {
+  position: absolute;
+  top: 5712px;
+  left: 558px;
+  z-index: 999;
+  font-size: 20px;
+  line-height: 2;
+  text-align: center;
+  font-size: 18px;
+}
+.attention .List {
+  position: absolute;
+  top: 5848px;
+  left: 400px;
+  z-index: 999;
+  font-size: 20px;
+}
+.attention .List .line {
+  display: block;
+  height: 1px;
+  width: 641px;
+  background-color: #ffd300;
+}
+.attention .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 6285px;
+  left: 586px;
+  width: 246px;
+  height: 50px;
+  background-color: #fde260;
+  border-radius: 25px;
+}
+.cirle {
+  border-radius: 50%;
+  background-color: #fde260;
+}
