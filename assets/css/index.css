@@ -1,0 +1,30 @@
+html {
+  font-size: 14px;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+#container {
+  height: 20rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+#container span {
+  font-size: 1rem;
+}
+@media (max-width: 48rem) {
+  #container {
+    background: darkcyan;
+    width: 100%;
+  }
+  #container div:nth-child(2) {
+    display: none;
+  }
+}
+@media (min-width: 48rem) {
+  #container {
+    background: gold;
+    width: 100%;
+  }
+}
